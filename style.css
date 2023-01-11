@@ -11,6 +11,7 @@ html {
 
 body {
   background: #f4f6f7;
+  padding: 1rem;
 }
 
 a {
@@ -32,12 +33,15 @@ ol {
   padding: 0.25rem;
 }
 
+.just-font {
+  font-variation-settings: "wght" 200;
+  font-family: Dosis, Tahoma, Verdana, Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
 .just {
   line-height: 100%;
   font-size: 6rem;
   text-shadow: 4px 4px 4px #aaa;
-  font-variation-settings: "wght" 100;
-  font-family: Dosis, Tahoma, Verdana, Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 .just-other {
@@ -50,7 +54,14 @@ ol {
   margin-top: 1rem;
   text-align: center;
   font-size: 1.5rem;
-  font-family: Dosis, Tahoma, Verdana, Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.definition .just {
+  font-size: 1rem;
+}
+
+.definition .part-of-speech {
+  font-size: 0.75rem;
 }
 
 /*-----------------------------------------------------------------------------------
@@ -599,10 +610,11 @@ img {
 }
 
 .single-pricing {
+  max-width: 400px;
   -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
   -moz-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
-  padding: 24px 20px 50px;
+  padding: 24px 20px 85px;
   border-radius: 8px;
   position: relative;
   overflow: hidden;
@@ -635,31 +647,8 @@ img {
   margin-top: 1rem;
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
-  .single-pricing .pricing-list ul li {
-    font-size: 14px;
-    margin-top: 12px;
-  }
-}
-
-@media (max-width: 767px) {
-  .single-pricing .pricing-list ul li {
-    font-size: 14px;
-    margin-top: 12px;
-  }
-}
-
-@media only screen and (min-width: 576px) and (max-width: 767px) {
-  .single-pricing .pricing-list ul li {
-    margin-top: 1rem;
-  }
-}
-
 .single-pricing .pricing-list ul li i {
   margin-right: 8px;
-}
-
-.single-pricing .pricing-list ul li i {
   color: #0067f4;
 }
 
