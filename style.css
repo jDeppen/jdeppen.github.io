@@ -1,12 +1,27 @@
+@font-face {
+  font-family: 'Dosis';
+  font-style: normal;
+  font-weight: 400;
+  src: url('assets/fonts/Dosis/Dosis-VariableFont_wght.ttf');
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  background: #f4f6f7;
+}
+
+a {
+  text-decoration: none;
+}
+
 ul,
 ol {
   margin: 0px;
   padding: 0px;
   list-style-type: none;
-}
-
-body {
-  background: #f4f6f7;
 }
 
 .logo {
@@ -22,16 +37,23 @@ body {
 
 .just {
   line-height: 100%;
-  padding-bottom: 0.25rem;
-  font-weight: normal;
-  font-size: 3.7rem;
-  font-family: Tahoma, Verdana, Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 6rem;
+  text-shadow: 4px 4px 4px #aaa;
+  font-variation-settings: "wght" 100;
+  font-family: Dosis, Tahoma, Verdana, Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 .just-other {
-  line-height: 100%;
-  font-size: 1.25rem;
+  font-size: 85%;
+  text-shadow: 2px 2px 3px #ccc;
   font-family: Georgia, Times, "Times New Roman", serif;
+}
+
+.definition {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: Dosis, Tahoma, Verdana, Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 /*-----------------------------------------------------------------------------------
@@ -84,7 +106,6 @@ img {
   user-select: none;
   border: 2px solid transparent;
   padding: 0 32px;
-  font-size: 16px;
   line-height: 48px;
   color: #0067f4;
   cursor: pointer;
@@ -122,7 +143,6 @@ img {
 }
 
 .section-title .text {
-  font-size: 16px;
   line-height: 24px;
   color: #6c6c6c;
   margin-top: 24px;
@@ -235,12 +255,11 @@ img {
 }
 
 .navigation .navbar .navbar-nav .nav-item {
-  margin: 0 16px;
+  margin: 0 1rem;
   position: relative;
 }
 
 .navigation .navbar .navbar-nav .nav-item a {
-  font-size: 16px;
   line-height: 24px;
   font-weight: 700;
   padding: 26px 0;
@@ -371,7 +390,6 @@ img {
 
 @media (max-width: 767px) {
   .header-hero .header-content .text {
-    font-size: 16px;
     line-height: 24px;
   }
 }
@@ -539,7 +557,7 @@ img {
     position: relative;
     width: 100%;
     padding-left: 15px;
-    padding-right: 16px;
+    padding-right: 1rem;
     margin: 0 auto;
   }
 }
@@ -615,10 +633,9 @@ img {
 }
 
 .single-pricing .pricing-list ul li {
-  font-size: 16px;
   line-height: 24px;
   color: #121212;
-  margin-top: 16px;
+  margin-top: 1rem;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
@@ -637,8 +654,7 @@ img {
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .single-pricing .pricing-list ul li {
-    font-size: 16px;
-    margin-top: 16px;
+    margin-top: 1rem;
   }
 }
 
@@ -722,7 +738,6 @@ img {
 }
 
 .call-action-content .text {
-  font-size: 16px;
   color: #fff;
   line-height: 24px;
   margin-top: 16px;
@@ -783,7 +798,6 @@ img {
   border-radius: 50px;
   height: 48px;
   padding: 0 32px;
-  font-size: 16px;
   font-weight: 700;
   color: #fff;
   text-transform: uppercase;
@@ -842,7 +856,6 @@ img {
 
 p.form-message.success,
 p.form-message.error {
-  font-size: 16px;
   color: #121212;
   background: #cbced1;
   padding: 10px 15px;
@@ -866,7 +879,6 @@ p.form-message.error {
   border-radius: 5px;
   padding: 0 25px;
   background-color: #fff;
-  font-size: 16px;
 }
 
 .contact-form .single-form textarea::placeholder,
@@ -1004,7 +1016,6 @@ p.form-message.error {
 }
 
 .footer-link ul li a {
-  font-size: 16px;
   line-height: 24px;
   color: #121212;
   margin-top: 16px;
