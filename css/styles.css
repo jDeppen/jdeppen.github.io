@@ -12712,8 +12712,7 @@ fieldset:disabled .btn {
   color: rgba(var(--bs-danger-rgb), var(--bs-text-opacity)) !important;
 }
 
-.text-light,
-.page-header-ui-dark .btn-link {
+.text-light {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-light-rgb), var(--bs-text-opacity)) !important;
 }
@@ -12879,8 +12878,7 @@ fieldset:disabled .btn {
   color: rgba(0, 0, 0, 0.5) !important;
 }
 
-.text-white-50,
-.page-header-ui-dark .page-header-ui-text {
+.text-white-50 {
   --bs-text-opacity: 1;
   color: rgba(255, 255, 255, 0.5) !important;
 }
@@ -19666,8 +19664,7 @@ body {
   font-weight: 900 !important;
 }
 
-.text-white-75,
-.page-header-ui-dark .page-header-ui-text a {
+.text-white-75 {
   color: rgba(255, 255, 255, 0.75) !important;
 }
 
@@ -22586,25 +22583,12 @@ section {
   padding-top: 2rem;
 }
 
-.page-header-ui .page-header-ui-content .page-header-ui-title {
-  font-size: 2.5rem;
-}
-
 .page-header-ui .page-header-ui-content .page-header-ui-text {
   font-size: 1.15rem;
 }
 
 .page-header-ui .page-header-ui-content .page-header-ui-text.small {
   font-size: 0.9rem;
-}
-
-.page-header-ui-dark {
-  color: #fff;
-  background-color: #212832;
-}
-
-.page-header-ui-dark .page-header-ui-title {
-  color: #fff;
 }
 
 .page-header-ui-light {
