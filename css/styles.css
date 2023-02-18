@@ -139,7 +139,6 @@ body {
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
-  color: var(--bs-body-color);
   text-align: var(--bs-body-text-align);
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
@@ -229,11 +228,6 @@ h5,
 h6,
 .h6 {
   font-size: 1rem;
-}
-
-p {
-  margin-top: 0;
-  margin-bottom: 1rem;
 }
 
 abbr[title],
@@ -18209,11 +18203,6 @@ fieldset:disabled .btn {
   }
 }
 
-html,
-body {
-  height: 100%;
-}
-
 body {
   overflow-x: hidden;
 }
@@ -21804,21 +21793,6 @@ body {
 .input-group-joined.input-group-solid .form-control,
 .input-group-joined.input-group-solid .input-group-text {
   background-color: transparent;
-}
-
-#layoutDefault {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-#layoutDefault #layoutDefault_content {
-  min-width: 0;
-  flex-grow: 1;
-}
-
-#layoutDefault #layoutDefault_footer {
-  min-width: 0;
 }
 
 .content-skewed {
