@@ -6644,10 +6644,6 @@ fieldset:disabled .btn {
   padding: 1.35rem 1.35rem;
 }
 
-.card-title {
-  margin-bottom: 0.5rem;
-}
-
 .card-subtitle {
   margin-top: -0.25rem;
   margin-bottom: 0;
@@ -20711,49 +20707,6 @@ body {
   font-size: 0.9rem;
 }
 
-.card-portfolio {
-  position: relative;
-  overflow: hidden;
-  border: none;
-}
-
-.card-portfolio .card-body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 3.5rem;
-  width: 100%;
-  text-align: center;
-}
-
-.card-portfolio .card-body .card-title {
-  font-size: 0.75rem;
-  margin: 0;
-  text-transform: uppercase;
-  font-weight: 800;
-  letter-spacing: 0.1em;
-  color: #363d47;
-}
-
-@media (min-width: 768px) {
-  .card-portfolio .card-body {
-    position: absolute;
-    border-radius: 0.35rem;
-    opacity: 0;
-    height: 100%;
-    transition: opacity 0.25s ease-in-out;
-    background-color: rgba(0, 97, 242, 0.9);
-  }
-
-  .card-portfolio .card-body .card-title {
-    color: #fff;
-  }
-
-  .card-portfolio:hover .card-body {
-    opacity: 1;
-  }
-}
-
 .video {
   overflow: hidden;
 }
@@ -20776,62 +20729,6 @@ body {
 
 .video .video-link:hover {
   color: #fff;
-}
-
-.post-preview h5.card-title,
-.post-preview .card-title.h5 {
-  font-size: 1.1rem;
-  margin-bottom: 0.5rem;
-}
-
-.post-preview .post-preview-meta {
-  display: flex;
-  align-items: center;
-  margin-right: 0.5rem;
-}
-
-.post-preview .post-preview-meta .post-preview-meta-img {
-  height: 2.25rem;
-  width: 2.25rem;
-  border-radius: 100%;
-  margin-right: 0.5rem;
-  flex-shrink: 0;
-}
-
-.post-preview .post-preview-meta .post-preview-meta-details .post-preview-meta-details-name {
-  font-size: 0.9rem;
-  line-height: 1;
-  margin-bottom: 0.25rem;
-}
-
-.post-preview .post-preview-meta .post-preview-meta-details .post-preview-meta-details-date {
-  font-size: 0.75rem;
-  line-height: 1;
-}
-
-.post-preview-featured .post-preview-featured-img {
-  height: 20rem;
-  width: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.post-preview-featured h5.card-title,
-.post-preview-featured .card-title.h5 {
-  font-size: 1.75rem;
-}
-
-.post-preview-featured p.card-text {
-  font-size: 1.2rem;
-  font-weight: 300;
-}
-
-@media (min-width: 992px) {
-  .post-preview-featured .post-preview-featured-img {
-    height: 100%;
-    width: 100%;
-  }
 }
 
 .post-archive-tag {
