@@ -1,24 +1,25 @@
 @charset "UTF-8";
 
-.testimonial .testimonial-brand {
+.inspirational .inspirational-brand {
   fill: currentColor;
   margin-bottom: 1.35rem;
 }
 
-.testimonial .testimonial-brand svg {
+.inspirational .inspirational-brand svg {
   height: 3rem;
 }
 
-.testimonial .testimonial-quote {
+.inspirational .inspirational-quote {
   font-size: 1.4rem;
   font-weight: 300;
+  font-style: italic;
 }
 
-.testimonial .testimonial-name {
+.inspirational .inspirational-name {
   font-weight: bold;
 }
 
-.testimonial .testimonial-position {
+.inspirational .inspirational-position {
   font-weight: lighter;
 }
 
