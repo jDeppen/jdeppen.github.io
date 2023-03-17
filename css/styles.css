@@ -1,28 +1,5 @@
 @charset "UTF-8";
 
-.inspirational .inspirational-brand {
-  fill: currentColor;
-  margin-bottom: 1.35rem;
-}
-
-.inspirational .inspirational-brand svg {
-  height: 3rem;
-}
-
-.inspirational .inspirational-quote {
-  font-size: 1.4rem;
-  font-weight: 300;
-  font-style: italic;
-}
-
-.inspirational .inspirational-name {
-  font-weight: bold;
-}
-
-.inspirational .inspirational-position {
-  font-weight: lighter;
-}
-
 @media (min-width: 992px) {
   .divider-right {
     border-right: 0.0625rem solid #e0e5ec;
