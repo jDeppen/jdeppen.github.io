@@ -161,41 +161,20 @@
     <div class='just-other'>REAL ESTATE</div>
   </div>
 
-  <div class="tick" data-did-init="handleTickHire" data-credits="false">
-    <div data-repeat="true" data-layout="horizontal center" data-transform="upper -> split -> delay(random, 50, 100)">
-
-      <span data-view="flip" data-transform="ascii -> arrive -> round -> char(A-Z)" class="tick-char"></span>
-    </div>
+  <div style="text-align: center;" class="tick" data-value="Hiring">
+    <span data-view="flip"></span>
   </div>
 
-  <script>
-    function handleTickHire(tick) {
-      var words = [
-        'OOOOOO',
-        'HIRING'
-      ];
-
-      var index = 0; // start at first word
-
-      Tick.helper.interval(function () {
-        tick.value = words[index]; // word at current index
-
-        if (index === 0) {
-          index = 1;
-        } else {
-          timer.stop(); // clean up timer
-          tick.destroy(); // clean up tick
-        }
-      }, 50);
-    }
-  </script>
-
-  <div style="margin: 1rem 0;" class="tick" data-value="3" data-did-init="handleTickInit" data-credits="false">
+  <div style="margin: 1rem 0;" class="tick" data-value="4" data-did-init="handleTickInit" data-credits="false">
     <div data-layout="horizontal center" data-repeat="true"
-      data-transform="arrive(9, .001) -> round -> pad(' ') -> split -> delay(rtl, 100, 150)">
+      data-transform="arrive(9, .002) -> round -> pad(' ') -> split -> delay(rtl, 100, 150)">
 
       <span data-view="flip"></span>
     </div>
+  </div>
+
+  <div style="text-align: center;" class="tick" data-value="Agents">
+    <span data-view="flip"></span>
   </div>
 
   <script>
@@ -208,35 +187,6 @@
       // play with arrive() values to tune animation speed and duration
       // 1. first value is maximum speed of increase
       // 2. second value is speed at which the increase ramps up
-    }
-  </script>
-
-  <div class="tick" data-did-init="handleTickAgents" data-credits="false">
-    <div data-repeat="true" data-layout="horizontal center" data-transform="upper -> split -> delay(random, 50, 100)">
-
-      <span data-view="flip" data-transform="ascii -> arrive -> round -> char(A-Z)" class="tick-char"></span>
-    </div>
-  </div>
-
-  <script>
-    function handleTickAgents(tick) {
-      var words = [
-        'OOOOOO',
-        'AGENTS'
-      ];
-
-      var index = 0; // start at first word
-
-      Tick.helper.interval(function () {
-        tick.value = words[index]; // word at current index
-
-        if (index === 0) {
-          index = 1;
-        } else {
-          timer.stop(); // clean up timer
-          tick.destroy(); // clean up tick
-        }
-      }, 50);
     }
   </script>
 
@@ -329,7 +279,7 @@
         </h4>
 
         JUST real estate is different because my sole focus is learning and coaching. Many traditional brokers
-        accept your license and wish you well in your career, while some commission cap companies attract agents with
+        accept your license and wish you well in your career, while some commission-cap companies attract agents with
         money but have many fees and offer little or no one-on-one coaching.
         <br>
         <br>
