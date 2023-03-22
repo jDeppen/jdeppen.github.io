@@ -152,30 +152,49 @@
     .tick-flip {
       border-radius: 0.12em !important;
     }
+
+    .flips {
+      display: flex;
+      justify-content: center;
+    }
   </style>
 </head>
 
 <body style="color: black;">
-  <div style="margin: 2rem 0; text-align: center;">
+  <div style="margin-top: 2rem; text-align: center;">
     <div class='just just-font'>JUST</div>
     <div class='just-other'>REAL ESTATE</div>
   </div>
 
-  <div style="text-align: center;" class="tick" data-value="Hiring">
-    <span data-view="flip"></span>
-  </div>
+  <div style="margin: 2rem 0 1.35rem;">
+    <div class="just-font" style="text-align: center;">Now Hiring</div>
+    <div class="tick" data-value="4" data-did-init="handleTickInit" data-credits="false">
+      <div data-layout="horizontal center" data-repeat="true"
+        data-transform="arrive(9, .002) -> round -> pad(' ') -> split -> delay(rtl, 100, 150)">
 
-  <div style="margin: 1rem 0;" class="tick" data-value="4" data-did-init="handleTickInit" data-credits="false">
-    <div data-layout="horizontal center" data-repeat="true"
-      data-transform="arrive(9, .002) -> round -> pad(' ') -> split -> delay(rtl, 100, 150)">
-
-      <span data-view="flip"></span>
+        <span data-view="flip"></span>
+      </div>
     </div>
   </div>
 
-  <div style="text-align: center;" class="tick" data-value="Agents">
-    <span data-view="flip"></span>
-  </div>
+  <!-- <div class="flips" style="text-align: center;">
+    <div style="margin: 2rem 0 2.35rem;" class="tick" data-value="HIRING">
+      <span data-view="flip"></span>
+    </div>
+
+    <div style="margin: 2rem 1rem 2.35rem;" class="tick" data-value="4" data-did-init="handleTickInit"
+      data-credits="false">
+      <div data-layout="horizontal center" data-repeat="true"
+        data-transform="arrive(9, .002) -> round -> pad(' ') -> split -> delay(rtl, 100, 150)">
+
+        <span data-view="flip"></span>
+      </div>
+    </div>
+
+    <div style="margin: 2rem 0 2.35rem;" class="tick" data-value="AGENTS">
+      <span data-view="flip"></span>
+    </div>
+  </div> -->
 
   <script>
     function handleTickInit(tick) {
@@ -190,7 +209,7 @@
     }
   </script>
 
-  <section class="bg-white" style="padding: 3rem 0 0">
+  <section class="bg-white">
     <div class="container">
       <div class="row gx-5 mb-5">
         <div class="col-lg-4 mb-5">
